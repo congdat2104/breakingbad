@@ -1,0 +1,351 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Heebo', sans-serif;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.Desktop{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+}
+html{
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+	scroll-behavior: smooth;
+}
+.wrapper-bg{
+	background: url("../IMG/639005.jpg") no-repeat center center fixed rgba(0,0,0,0.66);
+	background-size: cover;
+	padding: 40px;
+}
+/*Header*/
+nav{
+	top: 0;
+	left: 0;	
+	right: 0;
+	z-index: 12;
+	text-align: center;
+	padding: 10px;
+	position: fixed;
+}
+nav ul li{
+	display: inline-block;
+	height: 75px;
+	background: none;
+	transition-duration: 0.5s;
+}
+nav ul li:last-child{
+	border: none;
+}
+nav ul li:hover{
+	background-color: rgba(100,100,100,0.30);
+	transition-duration: 0.5s;
+}
+nav ul li a{
+	color: white;
+	font-size: 18px;
+	display: block;
+	text-decoration: none;
+	padding: 25px;
+	border-right:2px solid #1F6032;	
+}
+/*Logo*/
+.logo img{
+	width: 38vw;
+	height: 45vh;
+	position: absolute;
+	top: 30%;
+	left:  5%;
+	animation-name: logo-anim;
+	animation-duration: 1.5s;
+	animation-direction: alternate;
+}
+@keyframes logo-anim{
+	from{
+		transform: translate(-500px)
+	}
+	to{
+		transform: translate(0px)
+	}
+}
+/*Home*/
+#home{
+	width: 100%;
+	height: 100vh;
+	padding: 50px
+}
+.material-icons{
+	color: white;
+	position: relative;
+	left: 56%;
+	top: 240px;
+	border: 5px solid white;
+	border-radius: 100px;
+	display: block;
+}
+
+.poster img{
+	width: 250px;
+	height: auto;
+	position: absolute;
+	right: 50px;
+	bottom: 205px;
+	border: 4px solid white;
+	animation: poster-anim 4s infinite alternate linear;
+	box-shadow: -2px 12px 20px black; 
+}
+@keyframes poster-anim{
+	0%{
+		transform: translateY(0)
+	}
+	50%{
+		transform: translateY(5px)
+	}
+	100%{
+		transform: translateY(-5px)
+	}
+}
+.poster h4{
+	text-align: center;
+	color: white;
+	position: absolute;
+	right: 90px;
+	bottom: 140px;
+	animation: poster-anim 4s infinite alternate linear;
+}
+.icons i{
+	margin: 0 10px 0 0;
+}
+.icons{
+	position: relative;
+	top: 180px;
+	left: -765px;
+}
+
+/*Walter White*/
+#walter{
+	width: 100%;
+	height: 100vh;
+}
+.walter-img{
+	position: absolute;
+}
+.walter-img img{
+	width: auto;
+	height: 100vh;
+	float: right;
+	transform: scale(1,1);
+	transition-duration: 2s;
+	box-shadow:5px 5px 10px 5px;
+/*	position: absolute;*/
+
+}
+.walter-img img:hover{
+	transform: scale(1.07,1.07);
+	transition-duration: 2s;
+}
+.ww-quote h3{
+	width: 550px;
+	height: 100%;
+	color: white;
+	float: right;
+	text-align: justify;
+	margin: 280px 330px 0 0;
+	background-color: rgba(0,0,0,0.65);
+	line-height: 28px;
+	font-style: italic;
+	z-index: 10;
+	box-shadow:2px 2px 30px 5px black;
+	font-weight: lighter;
+	animation: poster-anim 4s infinite alternate linear;
+}
+.ww-human img{
+	position: relative;
+	width: auto;
+	height: 600px;
+	left: 1200px;
+	bottom: -240px;
+}
+.ww-human:hover{
+	
+}
+/*Jesse Pinkman*/
+#jesse{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+.page3 img{
+	width: 480px;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: scale(1,1);
+	transition-duration: 2s;
+	box-shadow:5px 5px 10px 5px;
+
+}
+.page3 img:hover{
+	transform: scale(1.02,1.02);
+	transition-duration: 2s;
+}
+.jp-quote h3{
+	width: 550px;
+	height: 100%;
+	color: white;
+	float: left;
+	text-align: justify;
+	margin: 280px 0 0 250px  ;
+	background-color: rgba(0,0,0,0.65);
+	line-height: 28px;
+	font-style: italic;
+	box-shadow:2px 2px 30px 5px black;
+	font-weight: lighter;
+	animation: poster-anim 4s infinite alternate linear;
+}
+.jp-human img{
+	position: relative;
+	width: auto;
+	height: 300px;
+	bottom: -200px;
+	left: -800px;
+	animation: head 3s infinite alternate linear;
+}
+@keyframes head{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(30deg)
+	}
+}
+/*Better Call Saul!*/
+#elements{
+	width: 100%;
+	height: 100vh;
+}
+.saul{	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.saul-poster img{
+	width: 400px;
+	height: auto;
+	margin: 100px 20px 0 0;
+	box-shadow:5px 5px 30px 5px;
+}
+.callsaul h1{
+	color: white;
+	font-size: 40px;
+	animation: poster-anim 4s infinite alternate linear;
+	text-align: center;
+}
+.callsaul button{
+	margin: 0 0px 0 80px;
+	border-radius: 12px ;
+	font-size: 20px;
+	background: none;
+	transition-duration: 1s;
+	border: 1px solid white; 
+	width: 200px;
+}
+.callsaul button:hover{
+	background-color: #046528;
+	transition-duration: 0.8s;
+	transition-timing-function: ease-in-out;
+	width: 800px;
+}
+button{
+	padding: 10px 30px;
+	color: white;
+}
+.callsaul ul li{
+	list-style: none;
+	margin: 20px 0;
+}
+.callsaul ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	 }
+/*Gallery*/
+#lab{
+	width: 100%;
+	height: 100vh;
+}
+.gallery ul {
+  	position:relative;
+	top: 50px;;
+  	margin:auto;
+  	list-style:none;
+  	width:1255px;
+  	height:650px;
+  	border-radius:3px;
+  	overflow:hidden;
+  	box-shadow:1px 1px 3px 1px;
+}
+
+
+.gallery li {
+  	position:relative;
+  	width:190px;
+  	height:650px;
+  	float:left;
+  	border-left:1px solid white;
+  	-webkit-transition:all 1.5s;
+  	-moz-transition:all 1.5s;
+  	transition:all 1.5s;
+  	box-shadow:-2px 0 10px 2px;
+}
+
+.galelery ul li:first-child {
+  	border:none;
+}
+
+.gallery span {
+  	display:block;
+  	position:absolute;
+  	bottom:0;
+  	width:50%;
+  	color:white;
+  	white-space:nowrap;
+  	padding:20px;
+  background: -webkit-linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+  background: -o-linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(to right, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */ /* Chrome,Safari4+ */ /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */ /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+
+}
+
+.gallery img {
+  	width:900px;
+  	height:650px;
+}
+
+.gallery ul:hover li {
+  	width:50px;  
+}
+
+.gallery ul li:hover {
+  	width:750px;
+}
+	
+
+
+
+
+
+
+
+
+
+
+
+
